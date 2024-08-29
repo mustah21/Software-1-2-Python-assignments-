@@ -2,7 +2,7 @@ import math
 import random
 from itertools import count
 
-"""
+
 
 #exercise 1
 
@@ -78,5 +78,20 @@ while attempts < 5:
 if attempts == 5:
     print ("Access Denied")
 
-"""
+
 #exercise 6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
