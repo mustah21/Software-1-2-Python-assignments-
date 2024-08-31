@@ -28,18 +28,24 @@ while centimeters > 0:
 largest = 0
 smallest = 0
 
-number = int(input("Enter your number: "))
+number = input("Enter your number: ")
 if number != "":
+    number = int(number)
     smallest = largest = number
-    while number != "":
 
-        if number < smallest:
-            smallest = number
-        elif number > largest:
-            largest = number
-        number = int(input("Enter your number: "))
-    else:
-        print(largest & smallest)
+
+while number != "":
+    number = int(number)
+
+    if number < smallest:
+        smallest = number
+    if number > largest:
+        largest = number
+
+    number = input("Enter your number: ")
+
+print(largest)
+print(smallest)
 
 """
 
