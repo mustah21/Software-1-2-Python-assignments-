@@ -1,5 +1,7 @@
 import random
+import math
 
+"""
 #exercise 1
 def dice_roll():
 
@@ -10,6 +12,8 @@ def dice_roll():
          break
         else:
             dice = int(random.randint(1,6))
+
+dice_roll()
 
 
 #exercise 2
@@ -22,6 +26,7 @@ def modify_dice_roll(x):
         else:
             dice = int(random.randint(1, x))
 
+modify_dice_roll(78)
 
 
 #exercise 3
@@ -37,20 +42,47 @@ def gallons_to_litres():
 
 
 #exercise 4
+def sum_num(integer):
+    return sum(integer)
 
-#Write a function that gets a list of integers as a parameter.
-#The function returns the sum of all the numbers in the list.
-#For testing, write a main program where you create a list, call the function, and print out the value it returned.
+numbers = [12 , 5 , 23, 2]
+print(sum_num(numbers))
 
-def list_integer():
-
-
-
-
-
-
-"""
-dice_roll()
-modify_dice_roll(78)
 gallons_to_litres()
+
+
+#exercise 5
+def list_integers(num):
+        even_num = []
+        for i in num:
+            if i % 2 == 0:
+                even_num.append(i)
+        return even_num
+
+my_list = [12, 4 , 7, 5, 10]
+print ("Original list:", my_list)
+print ("List with only even numbers: ", list_integers(my_list))
+
 """
+#exercise 6
+
+
+def pizza(diameter, price):
+    area = ((diameter/2)**2 * math.pi) * 0.0001
+    unit_price = price/ area
+    return unit_price
+
+w = float(input("Enter your diameter in cm: "))
+x = float(input("Enter your price: "))
+y = float(input("Enter your diameter in cm: "))
+z = float(input("Enter your price: "))
+
+unit_price1 = pizza(w,x)
+unit_price2 = pizza(y,z)
+
+if unit_price1 > unit_price2:
+    print("Pizza one is more valuable for money")
+elif unit_price2 < unit_price1:
+    print("Pizza two is more valuable for money")
+else:
+    print("Both have the same unit price")
