@@ -1,7 +1,6 @@
 import random
 import math
 
-"""
 #exercise 1
 def dice_roll():
 
@@ -63,10 +62,8 @@ my_list = [12, 4 , 7, 5, 10]
 print ("Original list:", my_list)
 print ("List with only even numbers: ", list_integers(my_list))
 
-"""
+
 #exercise 6
-
-
 def pizza(diameter, price):
     area = ((diameter/2)**2 * math.pi) * 0.0001
     unit_price = price/ area
@@ -81,8 +78,8 @@ unit_price1 = pizza(w,x)
 unit_price2 = pizza(y,z)
 
 if unit_price1 > unit_price2:
-    print("Pizza one is more valuable for money")
+    print("Pizza two is more value for money")
 elif unit_price2 < unit_price1:
-    print("Pizza two is more valuable for money")
+    print("Pizza one is more value for money")
 else:
     print("Both have the same unit price")
