@@ -1,8 +1,9 @@
+"""
 import random
 import math
 
 
-"""
+
 #exercise 1
 
 dices = int(input(" Please enter the number of dices you'd like to roll: "))
@@ -47,7 +48,6 @@ for x in range(2,number):
     else:
         print("This number is a prime number")
         break
-"""
 
 #exercise 4
 
@@ -60,7 +60,7 @@ for i in range(5):
 
 print(cities)
 
-
+"""
 
 
 
