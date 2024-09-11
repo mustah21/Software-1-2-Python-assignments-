@@ -22,7 +22,6 @@ while centimeters > 0:
     print(inches)
     break
  
-"""
 #exercise 3
 
 largest = 0
@@ -47,7 +46,7 @@ while number != "":
 print(largest)
 print(smallest)
 
-"""
+
 
 #exercise 4
 
