@@ -17,7 +17,6 @@ elif 7 < month_corrected <= 10:
 else:
     print("false entry")
 
-"""
 
 #exercise 2
 
@@ -39,7 +38,28 @@ for x in names:
     print(x)
 
 print(names)
-
+"""
 #exercise 3
+
+airports = {
+    "EFHK" : "helsinki-vanta airport",
+}
+
+while True:
+    airport_code = str(input("Please enter the code of the airport you wish to fetch or enter the name of a new airport. If neither: press enter to quit: "))
+    if airport_code == "":
+        break
+    if airport_code in airports:
+        print(airports[airport_code])
+    elif airport_code not in airports:
+        code = str(input("Please enter your ICAO code: "))
+        airports[code] = airport_code
+    else:
+        print("False entry")
+
+print(airports)
+
+
+
 
 
