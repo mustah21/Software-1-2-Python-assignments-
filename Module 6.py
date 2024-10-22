@@ -39,6 +39,7 @@ def gallons_to_litres():
         print (litres)
         return litres
 
+gallons_to_litres()
 
 #exercise 4
 def sum_num(integer):
@@ -47,7 +48,6 @@ def sum_num(integer):
 numbers = [12 , 5 , 23, 2]
 print(sum_num(numbers))
 
-gallons_to_litres()
 
 
 #exercise 5
