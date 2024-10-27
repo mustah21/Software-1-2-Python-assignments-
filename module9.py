@@ -26,7 +26,7 @@ print(f"""Registration number: {car1.registration_number}, Maximum speed: {car1.
 car1.accelerate(30)
 car1.accelerate(70)
 car1.accelerate(50)
-car1.accelerate(-200)
+car1.accelerate(-190)
 print(f"Current speed: {car1.current_speed}")
 
 #Task 3
