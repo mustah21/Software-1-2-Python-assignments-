@@ -18,6 +18,21 @@ class Car:
     def drive(self, time_hours):
         self.travelled_distance += self.current_speed * time_hours
 
+#TASK 1
+car1 = Car('ABC-123', 142)
+print(f"""Registration number: {car1.registration_number}, Maximum speed: {car1.max_speed}""")
+
+#Task 2
+car1.accelerate(30)
+car1.accelerate(70)
+car1.accelerate(50)
+car1.accelerate(-200)
+print(f"Current speed: {car1.current_speed}")
+
+#Task 3
+car1.accelerate(100)            #To show the function works fine
+car1.drive(1.5)
+print(f"Travelled distance: {car1.travelled_distance}")
 
 #Task 4
 
@@ -37,7 +52,8 @@ for car in cars:
     print(f"Registration number: {car.registration_number}:, Current speed: {car.current_speed}km/h, Final distance: {car.travelled_distance}")
 
 car = Car('ABC-123', 142)
+print(f"\nTesting one car:")
 print(f"Registration number: {car.registration_number}:")
-print(f"Maximum number: {car.max_speed}:")
+print(f"Maximum speed: {car.max_speed}:")
 print(f"Current speed: {car.current_speed}")
 print(f"Travelled distance: {car.travelled_distance}")
