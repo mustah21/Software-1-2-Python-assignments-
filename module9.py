@@ -31,7 +31,7 @@ if __name__ == "__main__":
     print(f"Current speed: {car1.current_speed}")
 
     #Task 3
-    car1.accelerate(100)            #To show the function works fine
+    car1.accelerate(100)          #To show the function works fine
     car1.drive(1.5)
     print(f"Travelled distance: {car1.travelled_distance}")
 
